@@ -1,0 +1,563 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- Mirrored from yanlab.asu.edu/Publication.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Apr 2023 23:03:51 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Yan Lab Publications</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css"> 
+<!-- 
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #fff;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: center; /* this centers the container in IE 5* browsers. The text is then set to the left aligned default in the #container selector */
+	color: #000000;
+	height: auto;
+	width: auto;
+	margin-left: 0px;
+	position: inherit;
+}
+
+/* Tips for Elastic layouts 
+1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
+2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
+3. If font sizing is changed in differing amounts on each div instead of on the overall design (ie: #sidebar1 is given a 70% font size and #mainContent is given an 85% font size), this will proportionately change each of the divs overall size. You may want to adjust based on your final font sizing.
+*/
+.twoColElsLtHdr #container {
+	width: 800px; /* the auto margins (in conjunction with a width) center the page */
+	border: 0px solid #000000;
+	text-align: left; /* this overrides the text-align: center on the body element. */
+	background-color: #FFf;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	font-size: 14px;
+} 
+.twoColElsLtHdr #header {
+	/*background-color: #DDDDDD;
+	background-image: url(title-bar.jpg);*/
+	text-align: left;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+} 
+.twoColElsLtHdr #header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	text-align: left;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border: 0;
+}
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the ".twoColElsLtHdr #sidebar1 p" rule.
+*/
+.twoColElsLtHdr #sidebar1 {
+	float: left; /* top and bottom padding create visual space within this div */
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	background-color: #fff;
+	width: 200px;
+	background-image: url(HY_Publications-SideGraphic.jpg);
+	height: 1200px;
+	background-repeat: no-repeat;
+}
+.twoColElsLtHdr #sidebar1 h3, .twoColElsLtHdr #sidebar1 p {
+	margin-left: 0px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 0px;
+	padding: 0px;
+}
+
+/* Tips for mainContent:
+1. If you give this #mainContent div a font-size value different than the #sidebar1 div, the margins of the #mainContent div will be based on its font-size and the width of the #sidebar1 div will be based on its font-size. You may wish to adjust the values of these divs.
+2. The space between the mainContent and sidebar1 is created with the left margin on the mainContent div.  No matter how much content the sidebar1 div contains, the column space will remain. You can remove this left margin if you want the #mainContent div's text to fill the #sidebar1 space when the content in #sidebar1 ends.
+3. To avoid float drop, you may need to test to determine the approximate maximum image/element size since this layout is based on the user's font sizing combined with the values you set. However, if the user has their browser font size set lower than normal, less space will be available in the #mainContent div than you may see on testing.
+4. In the Internet Explorer Conditional Comment below, the zoom property is used to give the mainContent "hasLayout." This avoids several IE-specific bugs that may occur.
+*/
+.twoColElsLtHdr #mainContent {
+	top: auto;
+	margin-top: 0;
+	margin-right: 1.5em;
+	margin-bottom: 0;
+	margin-left: 15em;
+} 
+.twoColElsLtHdr #footer {
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+	font-size: 12px;
+	font-style: normal;
+	text-align: left;
+} 
+.twoColElsLtHdr #footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+	text-align: left;
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:36px;
+	font-size: 1px;
+	line-height: 0px;
+	left: auto;
+	width: 800px;
+	top: auto;
+}
+.twoColElsLtHdr #container #mainContent #link1 p {
+	font-size: 16px;
+}
+.twoColElsLtHdr #container #mainContent #link1 p strong a {
+	font-family: Times New Roman, Times, serif;
+}
+.twoColElsLtHdr #container #mainContent #link1 h4 strong a {
+	font-family: Times New Roman, Times, serif;
+}
+.twoColElsLtHdr #container #mainContent #link1 h3 strong a {
+	font-family: Times New Roman, Times, serif;
+}
+.twoColElsLtHdr #container #mainContent h1 {
+	font-family: Times New Roman, Times, serif;
+}
+--> 
+</style><!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColElsLtHdr #sidebar1 { padding-top: 30px; }
+.twoColElsLtHdr #mainContent { zoom: 1; padding-top: 15px; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]--></head>
+
+<body class="twoColElsLtHdr">
+
+<div id="container">
+  <div id="header">
+    <h1><a href="http://www.asu.edu/"><img src="biodesign_logo-NEW.png" alt="asu-logo" width="372" height="50" border="0" /></a></h1>
+  </div>
+  <div id="header2"> <a href="http://chemistry.asu.edu/"><img src="dept-logo.jpg" alt="dl" width="800" height="38" border="0" /></a> 
+  <a href="https://biodesign.asu.edu/molecular-design-and-biomimetics"><img src="centerlogo.jpg" alt="dl" width="800" height="65" border="0" /></a> 
+  </div><div class="twoColElsLtHdr" id="link1">
+     <p style="font-size: 16px; color: #FFFFFF; background-color: #2f2f2f"><strong><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="index-2.html"><font color="FFFFFF">Home</font></a> | 
+                 <a href="News.html"><font color="FFFFFF">News</font></a> | 
+                 <a href="Research.html"><font color="FFFFFF">Research</font></a> | 
+                 <a href="People.html"><font color="FFFFFF">People</font></a> | 
+                 <a href="Publication.html"><font color="FFFFFF">Publications</font></a> | 
+                 <a href="Resources.html"><font color="FFFFFF">Resources</font></a> | 
+
+                 <a href="Covers.html"><font color="FFFFFF">Covers</font></a> <br>&nbsp;&nbsp;
+      </strong> </div>   
+<div id="sidebar1">
+    <h3>&nbsp;</h3>
+  <!-- end #sidebar1 --></div>
+  <div id="mainContent"> 
+    
+    <h1>Publications</h1> 
+    <h3 style="color: #903">2022 </h3>
+
+<p style="color: #000">226. D. Fu', R. Pradeep', A. Prasad', F. Zhang, D. Williams, J. Schreck, H. Yan* and J. Reif*. Automated design of 3D DNA origami with non-rasterized 2D curvature, <strong><em>Science Advances </em></strong> 8, eade445, (2022).</span></p> 
+
+<p style="color: #000">225. X. Zhou', D. Satyabola', H. Liu, S. Jiang, X. Qi, L. Yu, S. Lin, Y. Liu, N.W. Woodbury*, H. Yan*. Two-Dimensional Excitonic Networks Directed by DNA Templates as an Efficient Model Light-Harvesting and Energy Transfer System, <strong><em>Angew. Chem. Int. Ed.</em></strong> 61, e2022112, (2022).</span></p> 
+<p style="color: #000">224. R. Pradeep', J. Procyk', P. Nandi, A. Prasad, Y. Xu, E. Poppleton, D. Williams, F. Zhang, H. Yan, P. Chiu*, N. Stephanopoulos*, and P. Sulc*, Coarse-Grained Simulations for the Characterization and Optimization of Hybrid Protein-DNA Nanostructures, <strong><em>ACS Nano</em></strong> 16, 14086–14096, (2022).</span></p>
+
+<p style="color: #000">223. L. Ma, Y. Liu, C. Han, A. Movsesyan, P. Li, H. Li, P. Tang, Y. Yuan, S. Jiang, W. Ni, H. Yan, A. Govorov, Z. Wang, X. Lan*, DNA-Assembled Chiral Satellite-Core Nanoparticle Superstructures: Two-State Chiral Interactions from Dynamic and Static Conformations, <strong><em>Nano Letters</em></strong> 22, 4784&#8722;4791, (2022).</span></p>
+
+
+<p style="color: #000">222. K. Chen, F. Xu, Y. Hu, H. Yan*, L. Pan*, DNA Kirigami Driven by Polymerase-Triggered Strand Displacemen, <strong><em>Small</em></strong> 18, 2201478, (2022).</span></p>
+
+<p style="color: #000">221. X. Zhou, H. Liu, F. Djutanta, D. Satyabola, S. Jiang, X. Qi, L. Yu, S. Lin, R.F. Hariadi, Y. Liu, N.W. Woodbury*, H. Yan*, DNA-Templated Programmable Excitonic Wires for Micron-Scale Exciton Transport, <strong><em>Chem.</em></strong> 8, 2442-2459, (2022).</span></p>
+<p style="color: #000">220. X. Zhou, S. Lin, H. Yan*, Interfacing DNA nanotechnology and biomimetic photonic complex: advances and prospects in energy and biomedicine, <strong><em>J. Nanobiotechnology</em></strong> 20, 257, (2022).</span></p>
+<p style="color: #000">219. C. Simmons', T. MacCulloch', M. Krepl, M. Matthies, A. Buchberger, I. Crawford, J. Sponer, P. Sulc, N. Stephanopoulos*, H. Yan*, The influence of Holliday junction sequence and dynamics on DNA crystal self-assembly, <strong><em>Nat. Commun.</em></strong> 13, 3112, (2022).</span></p>
+<p style="color: #000">218. L. Liu, F. Hong, H. Liu, X. Zhou, S. Jiang, P. Sulc, J. Jiang*, H. Yan*, A localized DNA Finite State Machine with Temporal Resolution,  <strong><em>Science Advances</em></strong> 8, eabm9530, (2022).</span></p>
+<p style="color: #000">217. J. Bohlin', E. Poppleton', M. Matthies', J. Procyk', A. Mallya, H. Yan, P. Sulc*, Design and simulation of DNA, RNA, and hybrid protein-nucleic acid nanostructures with OxView, <strong><em>Nature Protocols</em></strong> 17, 1762–1788, (2022).</span></p>
+<p style="color: #000">216. C. Zhang*, X. Ma, X. Zheng, Y. Ke, K. Chen, D. Liu, Z. Lu, J. Yang*, H. Yan*, Programmable Allosteric DNA Regulations for Molecular Networks and Nanomachines, <strong><em>Science Advances</em></strong> 8, eabl4589, (2022).</span></p>
+<p style="color: #000">215. S. Dey', A. Dorey', L. Abraham', Y. Xing, I. Zhang, F. Zhang, S. Howorka*, H. Yan*, A Reversibly Gated Protein-Transporting Membrane Channel Made of DNA, <strong><em>Nat. Commun.</em></strong> 13, 2271, (2022).</span></p>
+    <h3 style="color: #903">2021 </h3>
+<p style="color: #000">214. H. Liu, F. Hong, F. Smith, J. Goertz, T. Ouldridge, M. Stevens, H. Yan, P. Sulc*, Kinetics of RNA and RNA:DNA hybrid strand displacement, <strong><em>ACS Synth. Biol.</em></strong> 10, 3066-3073, (2021).</span></p>
+<p style="color: #000">213. Y. Liu, L. Ma, S. Jiang, C. Han, P. Tang, H. Yang, X. Duan, N. Liu*, H. Yan*, X. Lan*, DNA Programmable Self-Assembly of Planar, Thin-Layered Chiral Nanoparticle Superstructures with Complex Two-Dimensional Patterns, <strong><em>ACS Nano </em></strong>15, 16664-16672, (2021).</span></p>
+     <p style="color: #000">212. T. Yuan, Y. Shao, X. Zhou, Q. Liu, Z. Zhu, B. Zhou, Y. Dong, N. Stephanopoulos, S. Gui*, H. Yan*, D. Liu*, Highly Permeable DNA Supramolecular Hydrogel Promotes Neurogenesis and Functional Recovery after Completely Transected Spinal Cord Injury, <em><strong> Advanced Materials </strong></em></strong>33, 2102428, (2021).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">211. Y. Zhang, Z. Qu, . Jiang, Y. Liu, R. Narayanan, D. Williams, X. Zuo, L. Wang, H. Yan, H. Liu* & C. Fan, Prescribing Silver Chirality with DNA Origami,<em><strong> J. Am. Chem. Soc </strong></em>143, 8639-8646, (2021).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">210. S. Jiang, N. Pal, F. Hong, N. E. Fahmi, H. Hu, M. Vrbanac, H. Yan*, N. G. Walter*, Y. Liu*, Regulating DNA Self-Assembly Dynamics with Controlled Nucleation, <em><strong>ACS Nano </strong></em>15, 5384-5396, (2021).</span></p>
+
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">209. S. Dey, C. Fan*, K. V. Gothelf*, J. Li*, C. Lin*, L. Liu, N. Liu*, M. A. D. Nijenhuis, B. Sacca*, F. C. Simmel*, H. Yan* & P. Zhan, DNA Origami, <em><strong>Nat. Rev. Methods Primers </strong></em>1, 13, (2021).</span></p>
+
+    <h3 style="color: #903">2020 </h3>
+ 
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">208. S. Jiang, Z. Ge, S. Mou, H. Yan*, C. Fan*, Designer DNA Nanostructures for Therapeutics, <em><strong>Chem </strong></em>7, 1156-1179, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">207. G. Yao', F. Zhang', F. Wang', T. Peng, H. Liu, E. Poppleton, P. Sulc, S. Jiang, L. Liu, C. Gong, X. Jing, X. Liu, L. Wang, Y. Liu, C. Fan*, H. Yan*, Meta-DNA Structures, <em><strong>Nat. Chem. </strong></em>12, 1067-1075, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">206. C.R. Simmons', T. MacCulloch', F. Zhang, Y. Liu, N. Stephanopoulos & H. Yan, A Self-Assembled Rhombohedral DNA Crystal Scaffold with Tunable Cavity Sizes and High Resolution Structural Detail, <em><strong>Angew. Chem. Int. Ed. </strong></em>59, 18619-18626, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">205. S. Jiang, F. Zhang, H. Yan, Complex assemblies and crystals guided by DNA, <em><strong>Nat. Mater. </strong></em>19, 694-700, (2020).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">204. J. Georges, X. Qi, X. Liu, Y. Zhou, E. C. Woolf, A. Valeri, Z. Al-Atrache, E. Belykh, B. Feuerstein, M. Preul, A. C. Scheck, M. Reiser, T. Anderson, J. Gopez, D. Appelt, S. Yocom, J. Eschbacher, H. Yan, P. Nakaji, A Fluorescent Aptamer Provides Rapid and Specific Ex Vivo Diagnosis of Central Nervous System Lymphoma from Rodent Xenograft Biopsies, <em><strong>J. Neurosurg. </strong></em>134, 1728-1737, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">203. J. Li', J. Dai', S. Jiang', M. Xie', T. Zhai, L. Guo, S. Cao, S. Xing, Z. Qu, Y. Zhao, F. Wang, Y. Yang, L. Liu, X. Zuo, L. Wang*, H. Yan*, C. Fan*, Encoding quantized fluorescence states with fractal DNA frameworks, <em><strong>Nat. Commun. </strong></em>11, 2185, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">202. X. Qi, X. Liu, L. Matiski, R. Rodriguez Del Villar, T. Yip, F. Zhang, S. Sokalingam, S. Jiang, L. Liu, H. Yan, Y. Chang, RNA Origami Nanostructures for Potent and Safe Anti-Cancer Immunotherapy, <em><strong>ACS Nano </strong></em>14, 4727-4740, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">201. F. Hong, D. Ma, K, Wu, L.A. Mina, R.C. Luiten, Y. Liu, H. Yan*, A.A. Green*, Precise and Programmable Detection of Mutations Using Ultraspecific Riboregulators, <em><strong>Cell </strong></em>180, 1018-1032, (2020).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">200. G. Yao, J. Li, Q. Li, X. Chen, X. Liu, F. Wang, Z. Qu, Z. Ge, R.P. Narayanan, D. Williams, H. Pei, X. Zuo, L. Wang, H. Yan, B.L. Feringa*, C. Fan*, Programming nanoparticle valence bonds with single-stranded DNA encoders, <em><strong>Nature Materials </strong></em>19, 781-788, (2020).</span></p>
+
+    <h3 style="color: #903">2019 </h3>
+
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">199. C. Zhang*, Z. Wang, Y. Liu, J. Yang, X. Zhang, Y. Li, L. Pan, Y. Ke*, H. Yan*, Nicking-Assisted Reactant Recycle to Implement Entropy-Driven DNA Circuit, <em><strong>J. Am. Chem. Soc. </strong></em>141, 17189-17197, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">198. Z. Zhao, C. Wang, H. Yan,* Y. Liu*, Soft Robotics Programmed with Double Crosslinking DNA Hydrogels, <em><strong>Advanced Functional Materials </strong></em>1905911, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">197. X. Jing, F. Zhang, P. Pan, X. Dai, J. Li, L. Wang, H. Yan, C. Fan, Solidifying framework nucleic acids with silica, <em><strong>Nature Protocols </strong></em>14, 2416-2436, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">196. X. Wang, A. Chandrasekaran, R. Arun, Z. Shen, Y. Ohayon, T. Wang, M. Kizer, R. Sha, C. Mao, H. Yan, X. Zhang, S. Liao, B. Ding, B. Chakraboty, N. Jonoska, D. Niu, H. Gu, J. Chao, X. Gao, Y. Li, T. Ciengshin, N. Seeman, Paranemic Crossover DNA: There and Back Again, <em><strong>Chemical Reviews </strong></em>119, 6273-6289, (2019).</span></p>  
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">195. Y. Zhou, X. Qi, Y. Liu, F. Zhang, H. Yan, DNA Nanoscaffold-Assisted Selection of Femtomolar Bivalent Aptamers for Human-Thrombin with Potent Anticoagulant Activity, <em><strong>ChemBioChem </strong></em>20, 2494-2503 (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">194. S. Mandal', X. Zhou', S. Lin, H. Yan, N. Woodbury,  Directed Energy Transfer through DNA-Templated J-aggregates, <em><strong>Bioconjugate Chemistry </strong></em>30, 1870-1879, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">193. X. Zhou', S. Mandal', S. Jiang, S. Lin, J. Yang, Y. Liu, D. Whitten, N. Woodbury, H. Yan, Efficient Long-rnage, Directional Energy Transfer through DNA-Templated Dye Aggregates, <em><strong>J. Am. Chem. Soc. </strong></em>141, 8473-8481, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">192. L. Xin, M. Lu, S. Both, M. Pfeifer, M. Urban, C. Zhou, H. Yan, T. Weiss, N. Liu, K. Lindfors, Watching a Single Fluorofphore Molecule Walk into a Plasmonic Hotspot, <em><strong>ACS Photonics </strong></em>6, 985-993, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">191. Y. Xu, S. Jiang, C. Simmons, R. Narayanan, F. Zhang, A. Aziz, H. Yan, N. Stephanopoulos*, Tunable Nanoscale Cages from Self-Assembling DNA and Protein Building Blocks, <em><strong>ACS Nano </strong></em>13, 3545-3554, (2019).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">190. H. Jun', F. Zhang', T. Shepherd, S. Ratanalert, X. Qi, H. Yan, M. Bathe*, Autonomously designed free-form 2D DNA origami, <em><strong>Science Advances </strong></em>5, eaav0655, (2019).</span></p>     
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">189. Z. Ge, J. Fu, M. Liu, S. Jiang, A. Andreoni, X. Zuo, Y. Liu, H. Yan*, C. Fan*, Constructing Submonolayer DNA Origami Scaffold on Gold Electrode for Wiring of Redox Enzymatic Cascade Pathways, <em><strong>ACS Appl. Mater. Interfaces </strong></em>11, 13881-13887 (2019).</span></p>     
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">188. Z. Ge, Z. Su, C. R. Simmons, J. Li, S. Jiang, W. Li, Y. Yang, Y. Liu*, W. Chiu, C. Fan*, H. Yan*, Redox Engineering of Cytochrome c using DNA Nanostructure-Based Charged Encapsulation and Spatial Control, <em><strong>ACS Appl. Mater. Interfaces </strong></em>11, 13874-13880 (2019).</span></p>       
+    <h3 style="color: #903">2018 </h3>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">187. F. Hong, S. Jiang, X. Lan, R. Narayanan, P. Sulc, F. Zhang*, Y. Liu*, H. Yan*, Layered-Crossover Tiles with Precisely Tunable Angles for 2D and 3D DNA Crystal Engineering, <em><strong>J. Am. Chem. Soc. </strong></em>140, 14670-14676, (2018).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">186. X. Qi', F. Zhang'*, Z. Su', S. Jiang, D. Han, B. Ding, Y. Liu, W. Chiu, P. Yin, H. Yan*, Programing Molecular Topologies from Single-stranded Nucleic Acids, <em><strong>Nature Commun. </strong></em>9, 4579, (2018).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">185. D. Jiang', Z. Ge', H. Im, C. England, D. Ni, J. Hu, L. Zhang, C. Kutyreff, Y. Yan, Y. Liu, S. Cho, J. Engle, J. Shi, P. Huang, C. Fan*, H. Yan*, W. Cai*, DNA-origami nanostructures can exhibit preferential renal uptake and alleviate acute kidney injury, <em><strong>Nature Biomed. Eng. </strong></em>2, 865-877, (2018).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">184. X. Lan*, T. Liu, Z. Wang, A. Govorov*, H. Yan, Y. Liu*, DNA-Guided Plasmonic Helix with Switchable Chirality, <em><strong>J. Am. Chem. Soc. </strong></em>140, 11763-11770, (2018).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">183. F. Zhang', C. Simmons', J. Gates, Y. Liu, H. Yan*, Self-Assembly of a 3D DNA Crystal Structure with Rationally Designed Six-Fold Symmetry, <em><strong>Angew Chem Int Ed. </strong></em>57, 12504-12507, (2018).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">182. X. Liu', F. Zhang', X. Jing', M. Pan, P. Liu, W. Li, B. Zhu, J. Li, H. Chen, L. Wang, J. Lin, Y. Liu, D. Zhao, H. Yan* and C. Fan*, Complex silica composite nanomaterials templated with DNA origami, <em><strong>Nature </strong></em>559, 593-598, (2018).</span></p>     
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">181. J. Li, A. Johnson-Buck, Y. Yang, W. Shih, H. Yan, N. Walter*, Exploring the speed limit of toehold exchange with a cartwheeling DNA acrobat, <em><strong>Nature Nanotechnol. </strong></em>13, 723-729, (2018).</span></p>      
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">180. S. Li, Q. Jiang, S. Liu, Y. Zhang, Y. Tian, C. Song, J. Wang, Y. Zou, G. J. Anderson, J. Han, Y. Chang, Y. Liu, C. Zhang, L. Chen, G. Zhou, G. Nie*, H. Yan*, B. Ding*, Y. Zhao*, A DNA nanorobot functions as a cancer therapeutic in response to a molecular trigger in vivo, <em><strong>Nature Biotechnology </strong></em>36, 258-264, (2018).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">179. E. Boulais, N. Sawaya, R. Veneziano, A. Andreoni, J. Banal, T. Kondo, S. Mandal, S. Lin, G. Schlau-Cohen, N. Woodbury, H. Yan*, A. Aspuru-Guzik*, M. Bathe*, Programmed coherent coupling in a synthetic DNA-based excitonic circuit, <em><strong>Nature Materals </strong></em>17, 159-166, (2018).</span></p>
+    <h3 style="color: #903">2017 </h3>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">178. Y. R. Yang, J. Fu, S. Wootten, X. Qi, M. Liu, H. Yan, Y. Liu* 2D Enzyme Cascade Network with Efficient Substrate Channeling by Swinging Arms, <em><strong>ChemBioChem.</strong></em> DOI: 10.1002/cbic.201700613 (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">177. D. Han', X. Qi', C. Myhrvold, B. Wang, M. Dai, S. Jiang, M. Bates, Y. Liu, B. An*, F. Zhang*, H. Yan* and P. Yin*, Single-stranded DNA and RNA Origami,<em><strong> Science </strong></em> 358, eaao2648, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">176. F. Zhang, H. Yan*, DNA self-assembly scaled up, <em><strong>Nature </strong></em> 552, 34-35, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">175. A. Carey, H. Zhang, M. Liu, D. Sharaf, N. Akram, H. Yan, S. Lin, N. Woodbury*, D. Seo*, Enhancing Photocurrent Generation in Photosynthetic Reaction Center-based Photoelectrochemical Cells with Biomimetic DNA Antenna, <em><strong>ChemSusChem </strong></em> 10, 4457-4460, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">174. S. Jiang, F. Hong, H. Hu, H. Yan*, Y. Liu*, Understanding the Elementary Steps in DNA Tile-Based Self-Assembly, <em><strong>ACS Nano. </strong></em> 11, 9370-9381, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">173. J. Li, A. A. Green, H. Yan, C. Fan, Engineering nucleic acid structures for programmable molecular circuitry and intracellular biocomputation, <em><strong>Nature Chem. </strong></em> 9, 1056-1067, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">172. C. Simmons, F. Zhang, T. MacCulloch, N. Fahmi, N. Stephanopoulos, Y. Liu, N. Seeman, H. Yan, Tuning the Cavity Size and Chirality of Self-Assembling 3D DNA Crystals. <em><strong>J. Am. Chem. Soc.</strong></em> 139, 11254-11260, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">171. D. Mieritz, X. Li, A. Volosin, M. Liu, H. Yan, N. Walter, D. Seo, Tracking Single DNA Nanodevices in Herarchically Meso-Macroporous Antimony-Doped Tin Oxide Demonstrates Finite Confinement, <em><strong>Langmuir </strong></em> 33, 6410-6418, (2017). </span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">170. F. Hong, F. Zhang, Y. Liu*, H. Yan*, DNA Origami:Scaffolds for Creating Higher Order Structures, <em><strong>Chem. Rev. </strong></em>117, 12584-12640, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">169. H. Zhang, A. Carey, K. Jeon, M. Liu, T. Murell, J. Locsin, S. Lin, H. Yan, N. Woodbury, D. Seo, A Highly Stable and Scalable Photosynthetic Reaction Center-Graphene Hybrid Electrode System for Biomimetic Solar Energy Transduction, <em><strong>J. Mater. Chem. A. </strong></em>5, 6038-6041,  (2017). </span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">168. F. Zhang, F. Hong, H. Yan*, DNA Origami Tiles: Nanoscale Mazes, <em><strong>Nature Nanotechnol.</strong></em>12, 189-190, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">167. Y. Dong, Y. Yang, Y. Zhang, D. Wang, X. Wei, S. Banerjee, Y. Liu, Z. Yang, H. Yan*, D. Liu*, Cuboid Vesicles Formed by Frame-guided Assembly on DNA Origami Scaffolds, <em><strong>Angew Chem Int Ed.</strong></em> 156, 1586-1589, (2017).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">166. A. Andreoni, S. Lin, H. Liu, R. E. Blankenship, H. Yan, N. Woodbury, Orange Carotenoid Protein as a Control Element in an Antenna System based on a DNA Nanostructure, <em><strong>Nano Letters</strong></em> 17, 1174-1180, (2017).</span></p>
+    <h3 style="color: #903">2016 </h3>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">165. F. Hong, S. Jiang, T. Wang, Y. Liu*, H. Yan*, 3D Framework DNA origami with Layered Crossovers, <em><strong>Angew Chem Int Ed.</strong></em> 128, 13024-13027,  (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">164. A. Carey, H. Zhang, D. Mieritz, A. Volosin, A. Gardiner, R. Cogdell, H. Yan, D. Seo, S. lin, N. Woodbury*, Photocurrent generation by photosynthetic purple bacterial reaction centers interfaced with a porous antimony-doped tin oxide (ATO) electrode, <em><strong>ACS Appl. Matter. Interfaces</strong></em> 8, 25104-25110, (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">163. J. Fu*, Y. Yang, S. Dhakal, Z. Zhao, M. Liu, T. Zhang, N. Walter, H. Yan, Assembly of Multi-Enzyme Complexes on DNA Nanostructures, <em><strong>Nature Protocols</strong></em> 11, 2243-2273, (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">162. C. Simmons, F. Zhang, J. Birktoft, X. Qi, D. Han, Y. Liu, R. Sha, H. Abdallah, C. Hernandez, Y. Ohayon, N. Seeman*, H. Yan*, Construction and Structure Determination of a Three-dimensional DNA Crystal, <em><strong>J. Am. Chem. Soc.</strong></em> 138, 10047-10054, (2016).</span></p> 
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">161. R. Veneziano, S. Ratanalert, K. Zhang, F. Zhang, H. Yan, W. Chiu, M. Bathe*, Designer nanoscale DNA assemblies programmed from the top down, <em><strong>Science</strong></em> 10.1126/science.aaf4388 (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">160. F. Zhang*, S. Jiang, W. Li, A. Hunt, Y. Liu*, H. Yan*, Self-assembly of Complex DNA Tessellations using low symmetry multi-arm DNA tiles, <em><strong>Angew Chem Int Ed.</strong></em> 55, 8860-8863,  (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">159. G. Ke, M. Liu, S. Jiang, X. Qi, Y. R. Yang, S. Wootten, F. Zhang, Z. Zhu, Y. Liu*, C. J. Yang*, H. Yan*, Directional Regulation of Enzyme Pathways via the Control of Substrate Channeling on a DNA Origami Scaffold, <em><strong>Angew Chem Int Ed.</strong></em> 55, 7483-7486, (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">158. M. Liu, J. Fu, X. Qi, S. Wootten, N. Woodbury, Y. Liu*, H. Yan*, A three-enzyme pathway with an optimized geometric arrangement to facilitate substrate transfer, <em><strong>ChemBioChem</strong></em> 17, 1097-1101, (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">157. W. Li, F. Zhang, H. Yan*, Y. Liu*, DNA Based Arithmetic Function: Half Adder Based on DNA Strand Displacement, <em><strong>Nanoscale</strong></em> 8, 3775-3784, (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">156. Z. Zhao, J. Fu, S. Dhakal, A. Johnson-Buck, M. Liu, T. Zhang, N. Woodbury, Y. Liu, N. Walter, H. Yan*, Nano-caged Enzymes with Enhanced Catalytic Activity and Increased Stability against Protease Digestion, <em><strong>Nature Commun.</strong></em> 7, 10619 (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">155. S. Dhakal, M. R. Adendorff, M. Liu, H. Yan*, M. Bathe*, N. G. Walter*, Rational design of DNA-actuated enzyme nanoreactors guided by single molecule analysis,  <em><strong>Nanoscale</strong></em> 8, 3125-3137, (2016).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">154. C. Zhang, J. Yang, S. Jiang, Y. Liu*, H. Yan*, DNAzyme-based Logic Gate-mediated DNA Self-assembly, <em><strong>Nano Letters</strong></em> 16, 736-741, (2016).</span></p>
+    <h3 style="color: #903">2015 </h3>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">153. H. Yan, Y. Zhang, DNA/RNA-Based Nanostructures for Cancer Nanomedicine, Section III: Novel Nanometerials for Diagnosis and Therapy, <em><strong>CaNanoPlan</strong></em> 14-19, (2015).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">152. F. Zhang, S. Jiang, S. Wu, Y. Li, C. Mao, Y. Liu*, H. Yan*, Complex wireframe DNA origami nanostructures with multi-arm junction vertices, <em><strong>Nature Nanotechnol.</strong></em> 10, 779-784, (2015).</span></p>
+      <ul>
+      <li>Featured as  <a href="nnano_Cover_Sep15.pdf">cover story</a> of the September 2015 issue of <em>Nature Nanotechnology</em>.</li>
+      <li>This  work was highlighted by <a href="https://biobeat.nigms.nih.gov/2015/10/cool-image-dna-origami/">National Institutes of Health</a> news.</li>
+       </ul>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">151. Y. Yang, Y. Liu, H. Yan*, DNA nanostructures as programmable biomolecular scaffolds, <em><strong>Bioconjugate Chemistry</strong></em> 26, 1381-1395, (2015).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">150. J. F. Georges, X. Liu, J. Eschbacher, J. Nichols, M. A. Mooney, A. Joy, R. F. Spetzler, B. G. Feuerstein, M. C. Preu, T. Anderson, H. Yan, P. Nakaji*, Use of a Conformational Switching Aptamer for Rapid and Specific Ex Vivo Identification of Central Nervous System Lymphoma in a Xenograft Model. <em><strong>PloS one</strong></em> 10(4), (2015).</span></p>
+     <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">149. A. Samanta, S. Banerjee, Y. Liu*, DNA nanotechnology for nanophotonic applications, <em><strong>Nanoscale</strong></em> 7, 2210-2220, (2015).</span></p>
+    <h3 style="color: #903">2014 </h3> 
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">148. K. Pan, D. N. Kim, F. Zhang, M. Adendorff, H. Yan*, M. Bathe*, Lattice-free prediction of three-dimensional structure of programmed DNA assemblies. <em><strong>Nature Commun.</strong></em> 5, 5078,  (2014).</span></p>  
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">147. P. Dutta, S. Levenberg, A. Loskutov, D. Jun, R. Saer, J. Beatty, S. Lin, Y. Liu*, N. Woodbury*, H. Yan*, A DNA-Directed Light-Harvesting/Reaction Center System, <em><strong>J. Am. Chem. Soc.</strong></em> 136, 16618-16625 (2014).</span></p>  
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">146. A. Samanta, Y. Zhou, S. Zou, H. Yan, Y. Liu*, Fluorescence Quenching of Quantum Dots by Gold Nanoparticles: a Potential Long Range Spectroscopic Ruler, <em><strong>Nano Letters</strong></em> 14, 5052-5057, (2014).</span></p>  
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">145. F. Zhang, J. Nangreave, Y. Liu, H. Yan*, Structural DNA Nanotechnology: State of the Art and Future Perspective, <em><strong>J. Am. Chem. Soc.</strong></em> 136, 11198-11211, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">144. D. Wang, S. Capehart, S. Pal, M. Liu, L. Zhang, J. Schuck, Y. Liu, H. Yan, M. Francis, J. De Yoreo*, Hierarchical Assembly of Plasmonic Nanostructures using Virus Capsid Scaffolds on DNA Origami Templates, <em><strong> ACS Nano</strong></em> 8, 7896-7904, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">143. X. Wei, J. Nangreave, Y. Liu*, Uncovering the Self-Assembly of DNA Nanostructures by Thermodynamics and Kinetics,<em><strong> Accounts Chem. Res.</strong></em> 47, 1861-1870, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">142. J. Flory, C. Simmons, S. Lin, T. Jonhson, A. Andreoni, J. Zook, G. Chirlanda, Y. Liu, H. Yan, and P. Fromme*, Low Temperature Assembly of Functional 3D DNA-PNA-Protein Complexes, <em><strong>J. Am. Chem. Soc.</strong></em> 136, 8283-8295, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">141. A. Johnson-Buck, S. Jiang, H. Yan, and N. G. Walter*, DNA-Cholesterol Barges as Programmable Membrane-Exploring Agents, <em><strong>ACS Nano</strong></em> 8, 5641-5649, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">140. L. Liang, J. Li, Q. Li, Q. Huang, J. Shi, H. Yan, and C. Fan*, Single-particle Tracking and Modulation of Cell Entry Pathways of a Tetrahedral DNA Nanostructure in Live Cells, <em><strong>Angew Chem Int Ed.</strong></em> 126, 7879-7884, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">139. J. Fu*, Y. R. Yang, A. Johnson-Buck, Y. Liu, N. G. Walter, N. W. Woodbury, and H. Yan*, Multi-enzyme Complexes on DNA Scaffolds Capable of Substrate Channeling with an Artificial Swinging Arm, <em><strong>Nature Nanotechnol.</strong></em> 9, 531-536, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">138. S. Jiang, H. Yan, and Y. Liu*, Kinetics of DNA Tile Dimerization, <em><strong>ACS Nano.</strong></em> 8, 5826-5832, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">137. P. K. Dutta, S. Lin, A. Loskutov, S. Levenberg, R. Saer, J. T. Beatty, Y. Liu, H. Yan,* N. Woodbury*, An Engineered System to Enhance and Control the Absorption Cross-section of Photosynthetic Reaction Center, <em><strong> J. Am. Chem. Soc. </strong></em> 136, 4599-4604, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">136. W. Li, Y. Yang, S. Jiang, H. Yan, Y. Liu*, Controlled Nucleation and Growth of DNA Tile Arrays within Prescribed DNA Origami Frames and Their Dynamics, <em><strong> J. Am. Chem. Soc. </strong></em> 136, 3724-3727, (2014).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">135. A. Samanta, Z. Deng, Y. Liu*, Infrared Emitting Quantum Dots: DNA Conjugation and DNA Origami Directed Self-Assembly, <em><strong>Nano Scale </strong></em> 6, 4486-4490, (2014).</span></p>
+    <h3 style="color: #903">2013 </h3>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">134. A. Samanta, Z. Deng, H. Yan, Y. Liu*, A perspective on Functionalizing Colloidal Quantum Dots with DNA, <em><strong>Nano Research </strong></em> 6, 853-870, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">133. D. Han, S. Jiang, A. Samanta, Y. Liu, H.Yan*, Unidirectional Scaffold-Strand Arrangement in DNA Origami, <em><strong>Angew Chem Int Ed.</strong></em> 52, 9031-9034, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">132. Q. Mei, R. H. Johnson, X. Wei, F. Su, Y. Liu, L. Kelbauskas, S. Lindsay, D. R. Meldrum, and H. Yan, On-chip isotachophoresis separation of functional DNA origami capture nanoarrays from cell lysate, <em><strong>Nano Research</strong></em> 6, 712-719, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">131. M. Liu, J. Fu*, C. Hejesen, Y. Yang, N. W. Woodbury, K. Gothelf, Y. Liu, H. Yan*, A DNA Tweezer-Actuated Enzyme Nanoreactor, <em><strong> Nature Comm.</strong></em> 4:2127 (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">130. S. Pal, P. Dutta, H. Wang, Z. Deng, S. Zou, H. Yan, Y. Liu*, Quantum Efficiency Modification of Organic Fluorophores Using Gold Nanoparticles on DNA Origami Scaffolds, <em><strong>J. Phys. Chem. C</strong></em> 117, 12735-12744, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">129. W. Li*, Y. Yang, H. Yan, Y. Liu*, 3-Input Majority Logic Gate and Multiple Input Logic Circuit Based on DNA Strand Displacement, <em><strong>Nano Letters</strong></em> 13, 2980-2988, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">128. A. Johnson-Buck, J. Nangreave, S. Jiang, H. Yan, N. Walter*, Multifactorial Modulation of Binding and Dissociation Kinetics on Two-Dimensional DNA Nanostructures, <em><strong>Nano Letters</strong></em> 13, 2754-2759, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">127. F. Zhang,  Y. Liu*, H. Yan*, Complex Archimedean Tiling Self-assembled from DNA Nanostructures, <em><strong>J. Am. Chem. Soc.</strong></em> 135, 7458-7461, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">126. X. Wei, J. Nangreave, S. Jiang, H. Yan, Y. Liu*, Mapping the Thermal Behavior of DNA Origami Nanostructures, <em><strong>J. Am. Chem. Soc.</strong></em> 135, 6165-6176, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">125. J. Flory, S. Shinde, S. Lin, Y. Liu, H. Yan, G. Ghirlanda, P. Fromme*, PNA-peptide Assembly in a 3D DNA Nanocage at Room Temperature,   <em><strong>J. Am. Chem. Soc.</strong></em> 135, 6985-6993, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">124. Y. Yang, Z. Zhao, F. Zhang, J. Nangreave, Y. Liu*, H. Yan*, Self-assembly of DNA Rings from Scaffold Free DNA Tiles,  <em><strong>Nano letters</strong></em> 13, 1862-1866, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">123. Z. Deng, S. Pal, A. Samanta, H. Yan, Y. Liu*, DNA Functionalization of Colloidal II-VI Semiconductor Nanowires,   <em><strong>Chemical Sciences</strong></em> 3, 2234-2240, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">122. X. Liu, Y. Liu*, H. Yan*, Functionalized DNA Nanostructures for Nanomedicine, Israel Journal of Chemistry, <em><strong>Special Issue on Supramolecular Chemistry for Materials and Medicine</strong></em>, Invited review, 53, 555-566 (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">121. O. Schulz, Z. Zhao, A. Ward, M. Koenig, F. Koberling, Y. Liu, J. Enderlein, H. Yan* and R. Ros*, Tip Induced Fluorescence Quenching for Nanometer Optical and Topographical Resolution,  <em><strong>Optical Nanoscopy</strong></em>, 2:1, (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">120. D. Han*, S. Pal, Y. Yang, S. Jiang, J. Nangreave, Y. Liu*, H. Yan*, DNA Gridiron Nanostructures Based on Four-Arm Junctions,  <em><strong>Science</strong></em>, 339, 1412-1415, (2013).</span></p>
+       <ul>
+      <li><a href="http://sdrv.ms/14f8aZh">Link</a> for high resolution supplementary information.</li>
+      <li><a href="https://skydrive.live.com/redir?resid=2416F4B1C095AF65!152&amp;authkey=!AELrUerdPdo1P1w">Link</a> for all the designs and sequences in Tiamat file format.</li>
+       </ul>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">119. A. Johnson-Buck, J. Nangreave, D. Kim,  M. Bathe,  H. Yan, N. Walter*, Super-Resolution Fingerprinting Detects Chemical Reactions and Idiosyncrasies of Single DNA Pegboards, <em><strong>Nano Letters</strong></em>, 13, 728-733 (2013).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">118. Z. Zhao, Y. Liu*, H. Yan*,  DNA Origami Templated Self-assembly of Discrete Length Single Wall Carbon Nanotubes, <em><strong>Org. Biomol. Chem.</strong></em>, 11, 596-598 (2013).</span></p>
+    <h3 style="color: #903">2012 </h3> 
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">117. Z. Deng, A. Samanta, J. Nangreave, H. Yan*, Y. Liu*, Robust DNA Functionalized Core/Shell Quantum Dots with Fluorescent Emission Spanning from UV-Vis to Near IR and Compatible with DNA Directed Self-Assembly, <em><strong>J. Am. Chem. Soc.</strong></em>, 134, 17424-17427 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">116. Y. Yang, D. Han, J. Nangreave, , Y. Liu*, H. Yan*, DNA Origami with Double-Stranded DNA As a Unified Scaffold, <em><strong>ACS Nano</strong></em>, 6, 8209-8215 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">115. N. Lu, H. Pei, Z. Ge, C. R. Simmons, H. Yan*, C. Fan*, Charge Transport within A Three-Dimensional DNA nanostructure Framework, <em><strong>J. Am. Chem. Soc.</strong></em>, 134, 13148-13151 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">114. Q. Jiang, C. Song, J. Nangreave, X. Liu, L. Lin, D. Qiu, Z. Wang, G. Zou, X. Liang, H. Yan*, B. Ding*, DNA Origami as a Carrier for Circumvention of Drug Resistance, <em><strong>J. Am. Chem. Soc.</strong></em>, 134, 13396-13403 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">113. X. Liu, Y. Xu, T. Yu, C. Craig, Y. Liu, H. Yan*, Y. Chang*, A DNA Nanostructure Platform for Directed Assembly of Synthetic Vaccines, <em><strong>Nano Letters</strong></em>, 12, 4254-4259 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">112. Z. Deng*, D. Cao, J. He, S. Lin, S. M. Lindsay, Y. Liu*, Solution Synthesis of Ultrathin Single-Crystalline SnS Nanoribbons for Photodetectors via Phase Transition and Surface Processing, <em><strong>ACS Nano</strong></em>, 6, 6197-6207 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">111. A. Samanta, Z. Deng, Y. Liu*, Aqueous Synthesis of Glutathione-Capped CdTe/CdS/ZnS and CdTe/CdSe/ZnS Core/Shell/Shell Nanocrystal Heterostructures, <em><strong>Langmuir</strong></em>, 28, 8205-8215 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">110. J. Fu, M. Liu, Y. Liu*, H. Yan*, Spatially-Interactive Biomolecular Networks Organized by Nucleic Acid Nanostructures, <em><strong> Acc. Chem. Res.</strong></em> 45, 1215-1226 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">109. F. Zhang, J. Nangreave, Y. Liu*, H. Yan*, Reconfigurable DNA Origami to Generate Quasi-Fractal Patterns, <em><strong>Nano Letters</strong></em>, 12, 3290-3295 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">108. A. V. Pinheiro, J. Nangreave, S, Jiang, H. Yan, Y. Liu*,  Steric Crowding and the Kinetics of DNA Hybridization within a DNA Nanostructure System, <em><strong>ACS Nano</strong></em>, 6, 5521-5530 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">107. J. Fu, H. Yan*,  Controlled Drug Release by a Nanorobot, <em><strong>Nature Biotechnol.</strong></em> 30, 407-408 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">106. J. Fu, M. Liu, Y. Liu, N. W. Woodbury*, H. Yan*,  Interenzyme Substrate Diffusion for an Enzyme Cascade Organized on Spatially Addressable DNA Nanostructures, <em><strong>J. Am. Chem. Soc.</strong></em> 134, 5516-5519 (2012).</span></p>
+    <p style="color: #903"><span class="twoColElsLtHdr" style="color: #000">105. Z. Li, L. Wang, H. Yan, Y. Liu*, Effect of DNA Hairpin Loops on the Twist of Planar DNA Origami Tiles, <em><strong>Langmuir</strong></em>, 28, 1959-1965 (2012).</span></p>
+<h3 style="color: #903">2011</h3>
+    <p class="twoColElsLtHdr" style="color: #000">104. A. V. Pinheiro, D. Han, W. M. Shih*, H. Yan*, Challenges and opportunities for structural DNA nanotechnology, <em><strong>Nature Nanotechnol.</strong></em> 6, 763-772 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">103. S. Pal, Z. Deng, H. Wang, S. Zou, Y. Liu*, H. Yan*, DNA Directed Self-Assembly of Anisotropic Plasmonic Nanostructures, <em><strong>J. Am. Chem. Soc.</strong></em> 133, 17606-17609 (2011).</p>
+    <p>102. Y. Liu, Nanomaterials: DNA brings quantum dots to order,  <em><strong>Nature Nanotechnol.</strong></em> 6, 463<span class="twoColElsLtHdr" style="color: #000">-</span>464 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">101. <span class="twoColElsLtHdr" style="color: #000">P. Dutta, R. Varghese, J. Nangreave, S. Lin, H. Yan, Y. Liu*, </span>DNA Directed Artificial Light Harvesting Antenna,
+      <em><strong>J. Am. Chem. Soc.</strong></em> 133, 11985<span class="twoColElsLtHdr" style="color: #000">-</span>11993 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">100.  C. R. Simmons, D. Schmitt, X. Wei, D. Han, A. M. Volosin, D. M Ladd, D. Seo, Y. Liu, H. Yan*, Size-Selective Incorporation of DNA Nanocages into Nanoporous Antimony-doped Tin Oxide Materials, <em><strong>ACS Nano</strong></em>, 5, 6060<span class="twoColElsLtHdr" style="color: #000">-</span>6068 (2011).<br />
+      <br />
+      99.  Z. Zhao, Y. Liu, H. Yan*, Organizing DNA Origami Tiles Into Larger Structures Using Pre-formed Scaffold Frames, <em><strong>Nano Letters</strong></em>, 11, 2997<span class="twoColElsLtHdr" style="color: #000">-</span>3002 (2011).<br />
+      <br />
+    98.  T. Torring, N. V. Voigt, J. Nangreave, H. Yan*, K. Gothelf*, DNA Origami: A quantum leap for self-assembly of complex structures, <em><strong>Chem. Soc. Rev</strong></em>, 40, 5636<span class="twoColElsLtHdr" style="color: #000"><span class="twoColElsLtHdr" style="color: #000">-</span></span>5646 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">97. X. Liu, H. Yan, Y. Liu*, Y. Chang*, Targeted Cell-Cell Interactions by DNA Nanoscaffold-Templated  Multivalent Bi-specific Aptamers, <strong><em>Small,</em></strong> 7, 1673<span class="twoColElsLtHdr" style="color: #000"><span class="twoColElsLtHdr" style="color: #000">-</span></span>1682 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">96. D. Han*, S. Pal, J. Nangreave, Z. Deng, Y. Liu*, H. Yan*, DNA Origami with Complex Curvatures in Three-dimensional Space, <strong><em>Science</em></strong>, 332, 342<span class="twoColElsLtHdr" style="color: #000">-</span>346 (2011).</p>
+       <ul>
+      <li>Featured as  <a href="Science%20cover-110415.bmp">cover story</a> of the April 15 issue of <em>Science</em>.</li>
+      <li>Download high resolution supporting information <a href="http://biodesign.asu.edu/assets/files/3dorigami-highresolution-si.pdf">here</a>.</li>
+      <li>This  work was highlighted by <a href="http://www.nsf.gov/news/news_summ.jsp?cntn_id=119245&amp;org=NSF&amp;from=news">National Science Foundation</a> news release with video  story.</li>
+       </ul>
+    <p class="twoColElsLtHdr" style="color: #000">95.&nbsp;S. Pal, R. Varghese, H. Yan*, Y. Liu*, Site Specific Synthesis and in-situ Immobilization of Fluorescent Silver Nanoclusters on DNA Nanoscaffolds Using Tollens Reaction, <strong><em>Angew Chem Int Ed</em></strong>, 50, 4176<span class="twoColElsLtHdr" style="color: #000">-</span>4179 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">94. Z. Deng, L. Tong, S. Lin, M. Flores, J. Cheng, H. Yan, Y. Liu* High Quality Manganese-Doped Zinc Sulfide Quantum Rods with Tunable Dual-Color and Multi-Photon Emissions, <strong><em>J. Am. Chem. Soc</em></strong>, 133, 5389-5396 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">93.&nbsp;J. Nangreave, H. Yan, Y. Liu*, DNA Nanostructures as Models for Evaluating the Role of Enthalpy and Entropy in Polyvalent Binding, <strong><em>J. Am. Chem. Soc</em></strong>, 133, 4490<span class="twoColElsLtHdr" style="color: #000">-</span>4497 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">92.&nbsp;Q. Mei, X. Wei, F. Su, Y. Liu, C. Youngbull, R. Johnson, S. Lindsay, H. Yan*, D. Meldrum* Stability of DNA Origami Nanoarrays in Cell Lysate <strong><em>Nano Letters</em></strong>, 11, 1477<span class="twoColElsLtHdr" style="color: #000">-</span>1482 (2011).</p>
+    <p class="twoColElsLtHdr" style="color: #000">91.&nbsp;Z. Zhao, Y. Liu*, H. Yan*, Encapsulation of Gold Nanoparticles in a DNA Origami Cage, <strong><em>Angew Chem Int Ed</em></strong>, 50, 2041-2044 (2011). </p>
+    <ul>
+      <li><span class="twoColElsLtHdr" style="color: #000">Selected by the editors as VIP paper</span>.</li>
+    </ul>
+    <h3 style="color: #903">2010</h3>
+    <p style="color: #000">90. B. Ding, H. Wu, W. Xu, Z. Zhao, Y. Liu, H. Yu*, <strong>H. Yan</strong>*, Interconnecting Gold Islands with DNA Origami  Nanotubes, <em><strong>Nano Lett.</strong></em> 10, 5065-5069 (2010).</p>
+<p style="color: #000">89. D. Han, S. Pal, Y. Liu*, <strong>H. Yan</strong>*, Folding and Cutting DNA into  Reconfigurable Topological Nanostructures, <em><strong>Nature Nanotechnol.</strong></em> 5, 712-717 (2010).</p>
+88. Z. Deng, <strong>H. Yan</strong>, Y. Liu*, Controlled Colloidal Growth of &nbsp;Ultra-Thin Single-Crystal ZnS Nanowires with Magic-Size Diameter, <em><strong>Angew. Chem. Int. Ed.</strong></em> 49, 8695-8698 (2010).
+<p style="color: #000">87.  Z. Li, M. Liu, L. Wang, J. Nangreave; <strong>H. Yan</strong>, Y. Liu*, Molecular Behavior of DNA Origami in Higher Order Self-assembly, <em><strong>J. Am. Chem. Soc.</strong></em> 138, 13545-13552 (2010).</p>
+    <p style="color: #000">86. H. Pei, N. Lu, Y. Wen, S. Song, Y. Liu, <strong>H. Yan</strong>*, C. Fan*, A DNA Nanostructure-based Biomolecular Probe Carrier Platform for Electrochemical Biosensing, <strong><em>Advanced Materials</em></strong>, 22, 4754-4758 (2010).</p>
+<p style="color: #000">85. J. Nangreave, D. Han, Y. Liu, <strong>H. Yan</strong>*, DNA Origami: A History and Current Perspective, <em><strong>Curr Opin Chem Biol</strong></em> 14, 608-615 (2010).</p>
+    <p style="color: #000">84. 
+      N. Stephanopoulos, M. Liu, G. Tong, Z. Li, Y. Liu, <strong>H. Yan</strong>*; M. Francis*, Immobilization and One-Dimensional Arrangement of Virus Capsids With Nanoscale Precision Using DNA Origami, <strong><em>Nano Lett.</em></strong>  10,  2714-2720 (2010).</p>
+    <p style="color: #000">83. Z. Deng*, O. Schulz, S. Lin, B. Ding, X. Liu, X. Wei, R. Ros, <strong>H. Yan</strong>, Y. Liu*, Aqueous Synthesis of Zinc-Blende CdTe/CdS Magic-Core/Thick-Shell Tetrahedral Shaped Nanocrystals with Emission Tunable to Near-Infrared, <em><strong>J. Am. Chem. Soc.</strong></em> 132, 5592-5593 (2010).</p>
+    <p style="color: #000">82. K. Lund, A. J. Manzo, N. Dabby, N. Michelotti, A. Johnson-Buck, J. Nangreave, S. Taylor, R. Pei, M. N. Stojanovic*, N. G. Walter*, E. Winfree*, <strong>H. Yan</strong>*, Molecular Robots Guided by Prescriptive Landscapes, <em><strong>Nature</strong></em> 465, 206-210 (2010).</p>
+    <p style="color: #000">81. S. Pal, Z. Deng, B. Ding, <strong>H. Yan</strong>*, Y. Liu*, DNA Origami Directed Self-assembly of Discrete Silver Nanoparticle Architectures, <em><strong>Angew. Chem. Int. Ed.</strong></em> 49, 2700-2704 (2010).</p>
+    <p style="color: #000">80. B. Ding*, Z. Deng, <strong>H. Yan</strong>, S. Cabrini, R. Zuckermann, J. Bokor*, Gold Nanoparticles Self-similar Chain Structure Organized by DNA Origami, <em><strong>J. Am. Chem. Soc.</strong></em> 132, 3248-3249 (2010).</p>
+    <p style="color: #000">79. R. Chhabra, J. Sharma, Y. Liu, S. Rinker, <strong>H. Yan</strong>*, DNA Self-assembly for Nanomedicine, <em><strong>Advanced Drug Delivery Reviews</strong></em> 62, 617-625 (2010).</p>
+    <p style="color: #000">78. Z. Zhao, <strong>H. Yan</strong>*, Y. Liu*, A Route to Scale up DNA  Origami using DNA Tiles as Folding Staples, <em><strong>Angew. Chem. Int. Ed.</strong></em> 49, 1414-1417 (2010).</p>
+    <p style="color: #000">77. Q. Wang*, H. Wang, C. Lin, J. Sharma,  S. Zou*; Y. Liu*, Photonic Interactions between Quantum Dots and Gold Nanoparticles in Discrete Nanostructures through DNA Directed Self-Assembly. <em><strong>Chem. Commun.</strong></em>  46, 240-242 (2010).</p>
+<p><strong style="color: #903; font-size: 16px; font-weight: bold;">2009</strong></p>
+	<p>76. Z. Deng*, <strong>H. Yan</strong>, Y. Liu*, Band Gap Engineering of Quaternary Alloyed ZnCdSSe Quantum Dots via a Facile Phosphine-Free Colloidal Method, <em><strong>J. Am. Chem. Soc.</strong></em> 131, 17744-17745 (2009).</p>
+	<p>75. R. Chhabra, J. Sharma, H. Wang, S. Zou, S. Lin, <strong>H. Yan</strong>, S. Lindsay*, Y. Liu*, Distance-dependent interactions between gold nanoparticles and fluorescent molecules with DNA as tubable spacers, <em><strong>Nanotechnology</strong></em><strong></strong> 20, 485201 (2009).</p>
+	<p>74. Y. Ke, S. M. Douglas, M. Liu, J. Sharma, A. Cheng, A. Leung, Y. Liu, W. M. Shih*, <strong>H. Yan*</strong>, Multilayer DNA Origmai Packed on a Square Lattice, <em><strong>J. Am. Chem. Soc.</strong></em> 131, 15903-15908 (2009).</p>
+	<p>73. L. A. Stearns, R. Chhabra, J. Sharma, Y. Liu, W. T. Petuskey, <span style="font-weight: bold">H. Yan*</span>, J. C. Chaput*, Template-Directed Nucleation and Growth of Inorganic Nanoparticles on DNA Scaffolds, <em><strong>Angew. Chem. Int. Ed.</strong></em> 45, 8494-8496 (2009).</p>
+	<p>72. S. Pal, <strong>H. Yan</strong>, Y. Liu*, Stable Silver Nanoparticle-DNA Conjugates for Directed Self-assembly of Core-Satellite Silver-Gold Nanoclusters,  <em><strong>Chem. Commun.</strong></em> 6059-6061 (2009).</p>
+    <p>71. Z. Li, B. Wei, J. Nangreave, C. Lin, Y. Liu, Y. Mi*, <strong>H. Yan</strong>*, A Replicable Tetrahedral Nanostructure Self-Assembled from a Single DNA Strand,  <em><strong>J. Am. Chem. Soc.</strong></em> 131, 13093-13098 (2009).</p>
+	<p>70. Y. Liu, <strong>H. Yan</strong>*, Designer Curvature,  <em><strong>Science</strong></em> 325, 685-686 (2009).</p>
+    <p>69. Y. Liu, <strong>H. Yan</strong>*, Coordinating Corners,  <em><strong>Nature Chemistry</strong></em> 1, 339-340 (2009).</p>
+    <p>68. C. S. Andersen, M. M. Knudsen, R. Chhabra, Y. Liu, <strong>H. Yan</strong>*,  K. V. Gothelf*, Distance Dependent Interhelical Couplings of Organic Rods Incorporated in DNA 4-Helix Bundles,  <em><strong>Bioconjugate Chem.</strong></em> 20, 1538-1546 (2009).</p>
+    <p>67. J. Nangreave, <strong>H. Yan</strong>*, Y. Liu*, Studies of Thermal Stability of Multivalent DNA Hybridization in a Nanostructured System, <em><strong>Biophys. J.</strong></em> 97, 563-571 (2009).</p>
+    <p>66. A. E. Gerdon, S.-S. Oh, W. Hsieh, Y. Ke, <strong>H. Yan</strong>*, H. T. Soh*, Controlled Delivery of DNA Origami on Patterned Surface, <em><strong>Small</strong></em> 5, 1942-1946 (2009).</p>
+    <p>65. Y. Ke, J. Sharma, M. Liu, K. Jahn, Y. Liu*, <strong>H. Yan</strong>*, Scaffolded DNA Origami of a DNA Tetrahedron Molecular Container, <em><strong>Nano. Lett.</strong></em> 9, 2445-2447 (2009).</p>
+    <p>64. C. Lin, <strong>H. Yan</strong>*, DNA Nanotechnology: A Cascade of Activity, <strong><em>Nature Nanotechnol. </em></strong>4, 211-212 (2009).<strong> </strong>Invited News &amp; Views article.</p>
+    <p>63. C. Lin, Y. Liu, <strong>H. Yan</strong>*, Designer  DNA Nanoarchitectures, <strong><em>Biochemistry</em></strong>, 48, 1663-1674 (2009).</p>
+    <p>62. J. Sharma, R. Chhabra, A. Cheng, J. Brownell, Y. Liu*, <strong>H. Yan</strong>*, Control of Self-Assembly of DNA Tubules Through Integration of Gold Nanoparticles, <strong><em>Science</em></strong><em>,</em> 323, 112-116 (2009).</p>
+    <ul>
+      <li>Highlight by <a href="http://www.nsf.gov/news/news_summ.jsp?cntn_id=112939&amp;org=OLPA&amp;from=news">National Science Foundation</a>.</li>
+    </ul>
+    <p> 61. C. Lin, Y. Ke, Z. Liu, J. Wang, Y. Liu*, <strong>H. Yan</strong>*, Designer Nanoarchitectures Self-assembled  from Mirror Image DNA, <strong><em>Nano  Lett.</em></strong> 9, 433-436 (2009).</p>
+<p><strong style="color: #903; font-size: 16px;">2008</strong></p>
+    <p> 60. C. Lin, S. Rinker, X. Wang, Y. Liu, N.  C. Seeman*, <strong>H. Yan</strong>*, In-vivo Cloning of DNA Nanostructures, <strong><em>Proc. Natl. Acad. Sci. U.S.A. </em></strong>105, 17626-17635 (2008).</p>
+<ul>
+      <li>  See  commentary from <a href="http://www.nature.com/news/2008/081007/full/news.2008.1157.html">Nature news</a> and <a href="http://www.pnas.org/content/105/46/17593">PNAS</a>.</li>
+    </ul>
+<p>      59. Z. Li, Y. Ke, C. Lin, <strong>H. Yan*</strong>, Y. Liu*,<strong> </strong>Subtractive  Assembly of DNA Nanoarchitectures Driven by Fuel Strand Displacement, <strong><em>Chem. Commun. </em></strong>4318-4320 (2008).<br />
+      <br />
+      58. C. Lin, J. Nangreave, Z. Li, <strong>H. Yan*</strong>, Y. Liu*, Signal Amplification  on a DNA Tile based Biosensor with Enhanced Sensitivity, <strong><em>Nanomedicine </em></strong>3, 521-528 (2008).<br />
+      <br />
+      57. Y. Xu, Q. Wang, P. He, Q. Dong, F. Liu, Y. Liu, L. Lin, H. Yan*, X. Zhao*, Cell Nucleus Penetration by Quantum Dots  Induced by Nuclear Staining Organic Fluorophore and UV-Irradiation, <strong><em>Advanced Materials </em></strong>20,  3468-3473 (2008).<br />
+      <br />
+      56. J. Sharma, R. Chhabra, C. S. Anderson, K. V.  Gothelf, <strong>H. Yan*</strong>, Y. Liu*, Toward  Reliable Gold Nanoparticle Patterning on Self-assembled DNA Nanoscaffold, <strong><em>J. Am. Chem. Soc. </em></strong>130,  7820-2821 (2008).<br />
+      <br />
+      55. C. S. Anderson, <strong>H. Yan</strong>,<strong> </strong>K. V. Gothelf*, Bridging One Helical Turn in dsDNA by Templated Dimerization&nbsp;of Molecular Rods, <strong><em>Angew. Chem. Int. Ed. </em></strong>47,  5569-5572 (2008).<br />
+      <br />
+      54. J. Sharma, Y. Ke, C. Lin, R. Chhabra, Q.  Wang, J. Nangreave, Y. Liu*, <strong>H. Yan*</strong>,<strong> </strong>DNA Tile Directed Self-assembly of Quantum Dots into Two-dimensional Nanopatterns, <strong><em>Angew. Chem. Int. Ed. </em></strong>47, 5157-5159 (2008).<br />
+      <br />
+      53. S. Rinker, Y. Ke, Y. Liu*, <strong>H. Yan*,</strong> Self-assembled DNA  Nanostructures for distance dependent multivalent ligand-protein binding, <strong><em>Nature Nanotechnol. </em></strong>3, 418-422 (2008).<br />
+      <br />
+      52. Y. Ke, S. Lindsay, Y. Chang, Y. Liu, <strong>H. Yan*</strong>, Self-assembled Water-soluble  Nucleic Acid Probe Tiles for Label Free RNA Detection, <strong><em>Science </em></strong>319, 180-183 (2008).</p>
+<ul>
+  <li>This paper has been highlighted by Reuters  and many other news agencies and was commented by high profile journals such as  <a href="http://www.nature.com/nbt/journal/v26/n3/full/nbt0308-299.html">Nature Biotechnology</a>, <a href="http://www.nature.com/nmeth/journal/v5/n3/full/nmeth0308-222.html">Nature Methods</a>.</li>
+</ul>
+    <p>51. J. sharma, R. Chhabra,<strong> H. Yan</strong>, Y. Liu<strong>*</strong>, A Facile In situ Generation of  Dithiocarbamate Ligands for Stable Gold  Nanoparticle-Oligonucleotide Conjugates <strong><em>Chem.</em></strong> <strong><em>Commun. </em></strong>18,  2140-2142 (2008).<br />
+      <br />
+    50. Q. Wang, Y. Liu, Y. Ke, <strong>H. Yan*</strong>, Quantum Dots Bioconjugation During Core-Shell Synthesis, <strong><em>Angew. Chem. Int. Ed. </em></strong>47,  316-319 (2008).<strong></strong></p>
+    <p><strong style="color: #903; font-size: 16px;">2007</strong><br />
+      <br />
+      49. C. Lin, X. Wang, Y. Liu, N. C. Seeman, <strong>H. Yan*,</strong> Rolling Circle Enzymatic  Replication of a Complex Multi-crossover DNA Nanostructure, <strong><em>J. Am. Chem. Soc. </em></strong>129, 14475-14481 (2007).<strong></strong><br />
+      <br />
+      48. R. Chhabra, J. Sharma, Y. Ke, Y. Liu, S.  Rinker, S. Lindsay, <strong>H. Yan*</strong>, Spatially
+      Addressable Multi-protein Nanoarrays  Templated by Aptamer Tagged DNA
+    Nanoarchitectures, <strong><em>J. Am. Chem. Soc. </em></strong>129, 10304-10305 (2007).</p>
+    <ul>
+      <li>This  paper was highlighted by the editor of <em>Nature  Nanotechnology</em> as <a href="http://www.nature.com/nnano/reshigh/2007/0807/full/nnano.2007.287.html">Research Highlight</a>. <a href="http://www.nature.com/nnano/reshigh/2007/0807/full/nnano.2007.287.html"></a><strong></strong></li>
+    </ul>
+    <p>47. Q. Wang, Y. Liu, C. Lin, <strong>H. Yan*</strong>, Lay-by-layer Growth of Superparamagnetic and fluorecently barcoded Nanospheres, <strong><em>Nanotechnology</em></strong> 18, 40, 405026 (2007).<br />
+      <br />
+    46. C. Lin, Y. Ke, Y. Liu, M. Mertig, J. Gu, <strong>H. Yan</strong>*, Functional DNA Nanotube  Arrays: Bottom-up Meets Top-down, <strong><em>Angew</em></strong><strong><em>.</em></strong><strong><em> Chem</em></strong><strong><em>.</em></strong><strong><em> I</em></strong><strong><em>n</em></strong><strong><em>t</em></strong><strong><em>.</em></strong><strong><em> Ed</em></strong><strong>.</strong> 46, 6089-6092  (2007).</p>
+    <ul>
+      <li> This paper was chosen by the editors as Hot Paper.</li>
+    </ul>
+    <p>      45. Q. Wang, Y. Liu, <strong>H. Yan</strong>*, Mechanism of a Self-templating Synthesis of Monodispersed  Hollow Silica Nanospheres with Tunable Size and Shell Thickness, <strong><em>Chem. Commun. </em></strong>2339-2341  (2007)<br />
+      <br />
+      44. Q. Wang, Y. Xu, X. Zhao, Y. Chang, Y. Liu, L. Jiang, J. Sharma, D.-K. Seo*, <strong>H. Yan</strong>*, A Facile One-step In situ Functionalization of Quantum  Dots with Preserved Photoluminescence for Bioconjugation, <strong><em>J. Am. Chem. Soc.</em></strong>129, 6380-6381, (2007).<br />
+      <br />
+      43. B. Williams, K. Lund, Y. Liu, <strong>H. Yan*, </strong>J. Chaput*, Self-assembled  Peptide Nanoarrays: An Approach  to Studying  Protein-protein  Interactions, <strong><em>Angew</em></strong><strong><em>.</em></strong><strong><em> Chem</em></strong><strong><em>.</em></strong><strong><em> I</em></strong><strong><em>n</em></strong><strong><em>t</em></strong><strong><em>.</em></strong><strong><em> Ed</em></strong><strong>. </strong>46, 3051-3054 (2007).<strong></strong><br />
+      <br />
+      42. C. Lin, Y. Liu, <strong>H. Yan*,</strong> Self-assembled Combinatorial Encoding Nanoarrays for  Multiplexed Biosensing, <strong><em>Nano Lett</em></strong><strong><em>.</em></strong><strong> </strong>7, 507-512  (2007).<strong></strong><br />
+      <br />
+      41. J.  Sharma, R. Chhabra, <strong>H. Yan</strong>, Y. Liu*,  pH-driven Conformational Switch of i-motif DNA for Reversible Assembly of  Gold Nanoparticles. <strong><em>Chem. Commun.</em></strong> 477-479 (2007).<br />
+    </p>
+    <p><strong style="color: #903; font-size: 16px;">2006</strong></p>
+    <p>      40. C. Lin, M. Xie, J. Chen, Y. Liu, <strong>H.  Yan*</strong>, Rolling Circle Amplification of a DNA Nano- junction. <strong><em>Angew. Chem. Int. Ed</em></strong><strong><em>. </em></strong>45, 7537-7539 <strong></strong>(2006).</p>
+    <ul>
+      <li>This paper was chosen by the editors as Hot Paper.</li>
+    </ul>
+    <p>      39. C. Lin, E. Katilius*, Y. Liu, J. Zhang, <strong>H. Yan*</strong>, Self-assembled Signaling  Aptamer Nanoarrays for Protein Detection, <strong><em>Angew. Chem. Int. Ed.</em></strong><strong></strong> 45,<strong></strong> 5296-5301 <strong></strong>(2006).<br />
+      <br />
+      38. C. Lin,  Y. Liu, S. Rinker, <strong>H. Yan*</strong>, DNA Tile  Based Self-assembly: Building Complex Nano-architectures, <strong><em>ChemPhysChem </em></strong>7,<strong> </strong>1641-1647 (2006).<br />
+      <br />
+      37. K. Lund, Y. Liu, <strong>H. Yan*</strong>,Combinatorial Self-Assembly of DNA Nanostructures, <strong><em>Organic and Biomolecular  Chemistry </em></strong><em>4, </em>3402-3403 (2006)</p>
+    <ul>
+      <li>      Chosen by the editors as Inside Cover image.</li>
+    </ul>
+    <p>36. S. Rinker, Y. Liu, <strong>H. Yan*</strong>, Two Dimensional LNA/DNA arrays: Estimating the Helicity of LNA/DNA Hybrid Duplex, <strong><em>Chem. Commun.</em></strong> 2675-2677 (2006).<br />
+      <br />
+      35. R. Chhabra, J.  Sharma, Y. Liu, <strong>H. Yan*</strong>, Addressable Molecular Tweezers for DNA Templated Coupling Reactions, <strong><em>Nano Lett.</em></strong> 6, 978-983 (2006).<br />
+      <br />
+      34. L. Lin, H. Wang, Y. Liu, <strong>H. Yan</strong>, and S. Lindsay*, Recognition Imaging with a DNA Aptamer, <strong><em>Biophysical J.</em></strong> 90, 4236-4238 (2006).<br />
+      <br />
+      33. K. Lund, B. Williams, Y. Ke, Y. Liu, <strong>H.  Yan*</strong>, DNA Nanotechnology: a rapidly evolving  field, <strong><em>Current  Nanoscience</em></strong> 2,  113-122 (2006).<br />
+      <br />
+      32. Y. Ke, Y. Liu, J.  Zhang, <strong>H. Yan</strong>*, A Study of DNA Tube  Formation  Mechanisms  Using  4-, 8- and 12-Helix  DNA Nanostructures, <strong><em>J. Am. Chem. Soc.</em></strong>128, 4414-4421 (2006).<br />
+      <br />
+      31. J. Zhang, Y, Liu,  Y. Ke, <strong>H. Yan</strong>*, Periodic Square-like Gold Nanoparticle Arrays Templated by a DNA Nanogrids on a Surface, <strong><em>Nano Lett</em></strong><strong><em>.</em></strong>6, 248-251 (2006). </p>
+    <ul>
+      <li>Featured in <a href="http://www.physorg.com/news11996.html">physorg.com</a>.</li>
+    </ul>
+    <p>30. <strong>H. Yan*</strong>, B. Xu, Towards Rapid DNA  Sequencing: Detecting Single-Stranded DNA with a Solid-State Nanopore, <strong><em>Small</em></strong> 2, 310-312 (2006).<br />
+      <br />
+      29. J. Sharma, R.  Chhabra, Y. Liu, Y. Ke, <strong>H. Yan</strong>*, DNA Templated  Self-assembly of Two-Dimensional and Periodical Gold Nanoparticle Arrays, <strong><em>Angew. Chem. Int. Ed.</em></strong> 45, 730-735 (2006).<br />
+    </p>
+    <p><strong style="color: #903; font-size: 16px;"> 2005</strong></p>
+    <p> 28. K.  Lund, Y. Liu, S. Lindsay, <strong>H. Yan</strong>*, Self-assembling Molecular Pegboard, <strong><em>J. Am. Chem. Soc.</em></strong> 127, 17606-17607 (2005).<br />
+      <br />
+      27. Y. Liu, Y. Ke, <strong>H. Yan</strong>*, Self-assembly of Symmetric Finite Size DNA Nanoarrays, <strong><em>J. Am. Chem. Soc.</em></strong> 127,  17140-17141 (2005).<br />
+      <br />
+    26. Y. Liu, C. Lin, H.  Li, <strong>H. Yan*</strong>, Aptamer Directed  Self-assembly of Proteins on a DNA Nanostructure, <strong><em>Angew. Chem. Int. Ed.</em></strong> 44, 4333  (2005).</p>
+    <ul>
+      <li>Featured in <a href="http://www.physorg.com/printnews.php?newsid=4616">physorg.com</a>.</li>
+    </ul>
+    <p>25. S. H. Park, P. Yin,  Y. Liu, J. Reif, T. H. LaBean,<strong> H. Yan*</strong>, Programmable DNA Self-assemblies for Nanoscale  Organization of Ligands and Proteins. <strong><em>Nano Lett.</em></strong><em> 5, </em>729 (2005).<br />
+      <br />
+      24. S. H. Park, R. Barish, H. Li , J. H. Reif , G. Finkelstein, <strong>H. Yan*</strong>, and T. H. LaBean*, Three Helix  Bundle DNA Tiles Self-assemble into 2D Lattice or 1D Templates for Silver  Nanowires. <strong><em>Nano Lett. </em></strong>5, 693 (2005).<br />
+      <br />
+      23. Y. Liu, <strong>H.</strong> <strong>Yan</strong>*, Modular Self-assembly of DNA Lattice with Tunable  Periodicity, <strong><em>Small</em></strong> 1, 327-330 (2005).</p>
+<p>22. J. H.  Reif*, T. H. LaBean, S. Sahu, <strong>H. Yan</strong> and P. Yin, Design, Simulation, and  Experimental Demonstration of Self-assembled DNA Nanostructures and Motors. In:  UPP2004, LNCS 3566, ed. by J.P. Banatre, Springer-Verlag Berlin Heidelberg, pp.  173-187, (2005).</p>
+    <p>21. N. C.  Seeman*, B. Ding , S. Liao , T. Wang, W.B. Sherman, P.E. Constantinou, J.  Kopatsch, C. Mao, R. Sha, F. Liu, <strong>H. Yan</strong> &amp; P.S. Lukeman, Experiments in Structural DNA Nanotechnology:&nbsp; Arrays  and Devices , <em><strong>Proc. SPIE</strong></em>; Nanofabrication:&nbsp; Technologies, Devices and Applications  5592, 71-81 (2005).</p>
+    <p>20. Sha, R., Zhang, X., Liao, S., Constantinou, P.E., Ding, B., Wang, T.,  Garibotti, A.V., Zhong, H., Israel, L.B., Wang, X., Wu, G., Chakraborty, B.,  Chen, J., Zhang, Y., Mao, C., <strong>Yan, H.</strong>, Kopatsch, J., Zheng, J., Lukeman, P.S.,  Sherman, W.B. and Seeman, N.C.*, Motifs and Methods in Structural DNA  Nanotechnology,<em><strong> Proc. Intl. Conf. Nanomaterials</strong></em>, NANO 2005, July 13-15, 2005,  Mepco Schlenk Engineering College, Srivakasi, India, V. Rajendran, ed., pp.  3-10 (2005).</p>
+    <p> 19. R. Sha, X. Zhang, S. Liao, P. Constantinou,  B. Ding, T. Wang, A. V. Garibotti, H. Zhong, L. B. Israel, X. Wang, G. Wu, B.  Chakraborty, J. Chen, Y. Zhang, <strong>H. Yan</strong>, Z Shen, W. SHen, P.Sa-Ardyen, J.  Kopatsch, J. Zheng, P. Lukeman, W.B. Sherman, C. Mao, N. Jonoska, N. C.  Seeman*. Structural DNA Nanotechnology: Molecular Construction and Composition.  In: UC2005, LNCS 3699, ed. by C.S. Calude et al. Springer-Verlag Berlin Heidelberg, pp.  20-31 (2005). </p>
+    <p><strong style="color: #903; font-size: 16px;">2004</strong> <br />
+      <br />
+    18.<strong> H. Yan*</strong>, Nucleic Acid Technology,<strong> <em>Science</em></strong>, 306, 2048-2049 (2004).    </p>
+    <p>      17. S. H. Park, <strong>H. Yan</strong>, J.H. Reif, T. H. LaBean, G. Finkelstein*, Electronic Nanostructures Templated on Self-assembled DNA Scaffolds, <strong><em>Nanotechnology</em></strong> 15, S525-S527 (2004).</p>
+<p>      16. <strong>H. Yan</strong>*, P. Yin, S. H. Park, H. Li, L.  Feng, X. Guan, D. Liu, J. H. Reif, T. H. LaBean, Self-Assembled DNA Structures for Nanoconstruction. <strong><em>AIP Proceedings</em></strong> 725 (DNA-Based Molecular Electronics), 43-52. (2004).</p>
+    <p>      15. P. Yin, <strong>H.  Yan*,</strong> X.J. Guan, A.J. Turberfield*, J. H. Reif*, An Autonomous Unidirectional DNA Walker. <strong><em>Angew. Chem. Int. Ed.</em></strong> 43, 4906-4911 (2004).</p>
+    <ul>
+      <li>        Featured in Technology Research News, <a href="http://www.trnmag.com/Stories/2004/ 110304/DNA_machines_take_a_walk_110304.html">TRNMag.com</a>.<br />
+      </li>
+    </ul>
+    <p>14. H. Li, S. H. Park, J. H. Reif, T. H. LaBean, <strong>H. Yan* </strong>DNA Templated Self-Assembly Of Protein And Nanoparticle Linear Arrays. <strong><em>J. Am. Chem. Soc.</em></strong> 126, 418 (2004).</p>
+    <p>13. Z. Shen, <strong>H. Yan</strong>, T. Wang, N. C. Seeman* Paranemic Crossover DNA: A  Generalized Holliday Structure with Applications in Nanotechnology. <strong><em>J.  Am. Chem. Soc.</em></strong> <em>126,</em> 1666  (2004).</p>
+    <p><strong style="color: #903; font-size: 16px;">2003</strong></p>
+    <p>      12.<strong> H.  Yan*</strong>, L. Feng, T. H. LaBean, J. H. Reif* Parallel Molecular Computation of  Pair-wise Exclusive-Or (XOR) Using  DNA String Tile Self-Assembly. <strong><em>J. Am. Chem. Soc</em></strong><em>. </em>125, 14246 (2003).</p>
+    <p>      11.<strong> H. Yan*</strong>, S. H. Park, G. Finkelstein, J.  H. Reif &amp; T. H. LaBean*, DNA Templated  Self-assembly of Protein Arrays and Highly Conductive Nanowires. <strong><em>Science</em></strong>, 301, 1882 (2003).</p>
+    <ul>
+      <li>        Featured in Technology Research News,  <a href="http://www.trnmag.com/Stories/2003/102203/DNA_forms_nano_waffles_102203.html">TRNMag.com</a>: DNA forms nano waffles.</li>
+    </ul>
+    <p> 10. L. Feng, S. H. Park, J. H. Reif,  <strong>H.</strong> <strong>Yan*</strong>, A Two-State DNA Lattice Switched By DNA Nanoactuator. <strong><em>Angew. Chem. Int. Ed.</em></strong> 42, 4342 (2003).<br />
+    </p>
+<ul>
+      <li>Featured by an interview with BBC radio program Discovery today (Oct. 29, 2003).</li>
+      <li>  Editors choice of Science magazine,  <a href="http://www.sciencemag.org/content/vol302/issue5642/twil.shtml">MATERIALS SCIENCE</a>: DNA Makes a Move.</li>
+    </ul>
+<p>9. <strong>H. Yan</strong>, T. H. LaBean, L. Feng, J. H. Reif*. Directed Nucleation Assembly of DNA tile Complexes for Barcode  Patterned Lattices. <strong><em>Proc. Natl. Acad. Sci</em></strong><em>. <strong>U.S.A. </strong></em>100, 8103 (2003).</p>
+    <ul>
+      <li>Featured in Technology Research News,  <a href="http://www.trnmag.com/Stories/2003/070203/DNA_makes_nano_barcode_070203.html">TRNMag.com</a>: DNA makes nano barcode.<br />
+      </li>
+    </ul>
+    <p>      8.<strong> H.  Yan</strong>, N. C. Seeman*. Edge-Sharing DNA Triangles And One-Dimensional Self-Assembly. <strong><em>J. Supramol. Chem.</em></strong>, 1, 229-237 (2003).</p>
+<p><strong style="color: #903; font-size: 16px;">2002 and Before</strong></p>
+<p>7. X. Zhang, <strong>H. Yan, </strong>Z. Shen and N. C. Seeman*. Paranemic Cohesion of  Topologically-Closed DNA Molecules. <strong><em>J. Am. Chem. Soc</em>.</strong> 124, 12940-12941  (2002).</p>
+    <p>6.<strong> H. Yan,</strong> X. Yang, Z. Shen and N. C. Seeman*. A Robust  Sequence-dependent Rotary DNA Device, <strong><em>Nature</em>,</strong> 415, 62-65 (2002).<br /> </p>
+    
+    <p>5. T. H. LaBean, <strong>H. Yan</strong>, J. Kopatsch, F. Liu, E. Winfree, J. H. Reif and N. C.  Seeman*. The Construction, Analysis,  Ligation and Aelf-assembly of DNA Triple Crossover  Molecules<em>, <strong>J. Am. Chem. Soc</strong></em><strong>.</strong> 122, 1848-1860 (2000).</p>
+    <p>4. N. C. Seeman, H. Wang, X. Yang, F. Liu, C.  Mao, W. Sun, L. Wenzler, Z. Shen, R. Sha, <strong>H.  Yan</strong>, M.H. Wong, P. Sa-Ardyen, B. Liu, H. Qiu, X. Li, J. Qi, S.M. Du, Y. Zhang, J.E. Mueller, T.-J. Fu, Y. Wang, and J. Chen. New Motifs in DNA Nanotechnology, <strong><em>Nanotechnology</em></strong> 9, 257-273 (1998).<strong></strong><br /> </p>
+
+    <p>3. Y. Ma,<strong> </strong>Q. Wang*, <strong>H. Yan</strong>, X. Ji and Q.  Qiu<strong>. </strong>Zeolite-Catalyzed  Esterification. 1. Synthesis Of Acetates, Benzoates And Phthalates. <strong><em>Appl. Catal.</em></strong> 139, 51-57 (1996).<br />
+    </p>
+    <p>2. Q. Wang*, Y. Ma,  X. Ji, <strong>H. Yan</strong>, Q. Qiu.  Zeolite-Catalyzed Friedel-Crafts Acylation Of Aromatics. 1. Synthesis Of 4-Acyl  Anisole With A HY Catalyst. <strong><em>Chin. Chem. Lett.</em></strong> 7,  99-102 (1996).<br />
+    </p>
+    <p>1. Q. Wang*, Y. Ma, X. Ji, <strong>H. Yan</strong> and Q. Qiu<strong>. </strong>Regioselective Acylation Of Anisole  With Carboxylic-Acid Over HZSM-5 Catalyst. <strong><em>J. Chem. Soc. Chem. Comm.</em></strong> 22, 2307-2308 (1995).</p>
+  </div>
+	<!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats -->
+	<div id="footer">
+	  <table width="780" border="0" cellspacing="0" cellpadding="2">
+	    <tr>
+	      <td><a href="http://www.biodesign.asu.edu/"><img src="biodesign%20logo.jpg" width="317" height="52" border="0" /></a></td>
+	      <td align="right">Office: Biodesign A 124B  Lab: Biodesign A 131 <br />
+Phone: (480)727-8570 Lab Phone: (480)727-0428 <br />
+Fax: (480) 965-2747 <br />
+Email: <a href="Mailto:hao.yan@asu.edu">hao.yan@asu.edu </a></td>
+        </tr>
+      </table>
+	  <!-- end #footer -->
+  </div>
+  <!-- end #container -->
+</div>
+</body>
+
+<!-- Mirrored from yanlab.asu.edu/Publication.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Apr 2023 23:04:39 GMT -->
+</html>
