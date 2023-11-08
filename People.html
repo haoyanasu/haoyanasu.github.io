@@ -35,6 +35,14 @@ body  {
 	text-align: left;
 }
 
+.center-image{
+  width: 100px;
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding-bottom: 5px;
+}
+
 /* Tips for Elastic layouts 
 1. Since the elastic layouts overall sizing is based on the user's default fonts size, they are more unpredictable. Used correctly, they are also more accessible for those that need larger fonts size since the line length remains proportionate.
 2. Sizing of divs in this layout are based on the 100% font size in the body element. If you decrease the text size overall by using a font-size: 80% on the body element or the #container, remember that the entire layout will downsize proportionately. You may want to increase the widths of the various divs to compensate for this.
@@ -214,7 +222,7 @@ body  {
                             <td colspan="2" bgcolor="#F1B80D"><span style="font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 18px; color: #FFF">Research Professional</span></td>
                         </tr>
                         <tr>
-                            <td><img src="yangxu.jpg" width="89" height="112" alt="yangxu" /></td>
+                            <td><img src="/~hyan6/img/yangxu.jpg" width="89" height="112" alt="yangxu" /></td>
                             <td><p><strong>Yang Xu</strong>, 
                                 <em>Assistant Research Professor</em><br />      
                                 Email: <a href="mailto:yangxu3@asu.edu">yangxu3@asu.edu</a></td>
@@ -272,7 +280,7 @@ body  {
                         </tr>
                     
                         <tr>
-                            <td><img src="xinyi.png" alt="xinyi" width="89" height="112" /></td>
+                            <td><div class="center-image"><img src="xinyi.png" alt="xinyi" width="89" height="105" /></div></td>
                             <td><p><strong>Xinyi Tu</strong><br />
                               <em>3rd Year Graduate Student</em><br />
                               Email: <a href="mailto:xinyitu@asu.edu">xinyitu@asu.edu</a></p></td>
