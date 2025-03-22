@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<script>
+  function includeHTML() {
+    var z, i, elmnt, file, xhttp;
+    /*loop through a collection of all HTML elements:*/
+    z = document.getElementsByTagName("*");
+    for (i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      /*search for elements with a certain attribute:*/
+      file = elmnt.getAttribute("w3-include-html");
+      if (file) {
+        /*make an HTTP request using the attribute value as the file name:*/
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /*remove the attribute, and call this function once more:*/
+            elmnt.removeAttribute("w3-include-html");
+            includeHTML();
+          }
+        }      
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        /*exit the function:*/
+        return;
+      }
+    }
+  };
+</script>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="Icon" type="image/x-icon" href="favicon.png"/>
+<title>Yan Lab at ASU Home</title>
+<link rel="stylesheet" type="text/css" href="index.css"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3HMD3T7GZP"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3HMD3T7GZP');
+</script>
+</head>
+<body>
+<div id="container">
+    <div w3-include-html="Components/header.html" id="header"></div>
+    <div id="sidebar1">
+      <img src="HY_HomePage-SideGraphic.png" width="183" height="535" alt="DNA" />
+    <!-- end #sidebar1 --></div>
+    <div id="mainContent">
+      
+      <span style="font-size: 30px; font-weight: bold;">Yan Lab at ASU</span>
+  <p><img src="HY_HomePage-MainGraphic.png" width="560" height="385" alt="research-summary" /></p>
+  <p>The theme of our research is to use nature&#39;s design rules as inspiration to advance biomedical, energy-related, and other technological innovations through the use of self-assembling molecules and materials. We aim to create intelligent materials with better component controls at the molecular level. Our interdisciplinary team is interested in designing bio-inspired molecular building blocks and programming their higher order assembly into systems that will perform complex functions. Our ultimate goals are 1) to engineer an information guided self-assembling molecular system for the finest possible interactions of molecules in a three-dimensional space; and 2) to create man-made molecular machines/molecular robotics through molecular design, molecular programming, directed molecular evolution and molecular systems engineering.</p>
+  
+  <h3><span style="color: #903"><strong>Funding Agencies</strong></span></h3>
+  <blockquote>
+    <blockquote>
+      <p> <img src="logo-nsf.png" width="135" height="135" alt="NSF" /><img src="logo-nih.png" width="135" height="135" alt="NIH" /><img src="logo-aro.png" width="135" height="135" alt="ARMY" /></p>
+    </blockquote>
+    </blockquote>
+  <p><img src="logo-onr.png" width="280" height="126" alt="ONR" /><img src="logo-doe.png" width="135" height="135" alt="DOE" /><img src="logo-sloan.png" width="135" height="135" alt="sloan" /></p>
+    </div>
+    <div w3-include-html="Components/footer.html"></div>
+    <!-- end #container -->
+  </div>
+  <script>
+    includeHTML();
+  </script>
+  </body>
+  
+  <!-- Mirrored from yanlab.asu.edu/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Apr 2023 22:55:22 GMT -->
+  </html>

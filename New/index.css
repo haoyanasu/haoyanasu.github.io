@@ -1,0 +1,100 @@
+body  {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+	background: #fff;
+	margin: 0; /* it's good practice to zero the margin and padding of the body element to account for differing browser defaults */
+	padding: 0;
+	text-align: justify;
+	height: auto;
+	width: auto;
+	margin-left: 0px;
+	position: inherit;
+}
+#container {
+	width: 800px;
+	text-align: justfy; /* this overrides the text-align: center on the body element. */
+	background-color: #FFf;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+} 
+#header {
+	/*background-color: #ddd;
+	background-image: url(title-bar.jpg);*/
+	text-align: left;
+	padding-top: 0;
+	padding-right: 10px;
+	padding-bottom: 0;
+	padding-left: 10px;
+} 
+#header h1 {
+	margin: 0; /* zeroing the margin of the last element in the #header div will avoid margin collapse - an unexplainable space between divs. If the div has a border around it, this is not necessary as that also avoids the margin collapse */
+	padding: 10px 0; /* using padding instead of margin will allow you to keep the element away from the edges of the div */
+	text-align: left;
+}
+
+/* Tips for sidebar1:
+1. Be aware that if you set a font-size value on this div, the overall width of the div will be adjusted accordingly.
+2. Since we are working in ems, it's best not to use padding on the sidebar itself. It will be added to the width for standards compliant browsers creating an unknown actual width. 
+3. Space between the side of the div and the elements within it can be created by placing a left and right margin on those elements as seen in the "#sidebar1 p" rule.
+*/
+#sidebar1 {
+	float: left;
+	width: 10em; /* since this element is floated, a width must be given */
+	background: #EBEBEB; /* top and bottom padding create visual space within this div */
+	padding-top: 0px;
+	padding-right: 0;
+	padding-bottom: 0px;
+	padding-left: 0;
+	position: relative;
+	top: 0px;
+	background-color: #FFFFff;
+}
+#sidebar1 h3, #sidebar1 p {
+	margin-left: 10px; /* the left and right margin should be given to every element that will be placed in the side columns */
+	margin-right: 10px;
+}
+#mainContent {
+	margin: 0 1.5em 0 13em;
+	top: auto;
+} 
+#footer {
+	padding: 0 10px; /* this padding matches the left alignment of the elements in the divs that appear above it. */
+	background:#DDDDDD;
+	font-size: 12px;
+	font-style: normal;
+	text-align: left;
+} 
+#footer p {
+	margin: 0; /* zeroing the margins of the first element in the footer will avoid the possibility of margin collapse - a space between divs */
+	padding: 10px 0; /* padding on this element will create space, just as the the margin would have, without the margin collapse issue */
+}
+
+/* Miscellaneous classes for reuse */
+.fltrt { /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class should be placed on a div or break element and should be the final element before the close of a container that should fully contain a float */
+	clear:both;
+	height:36px;
+	font-size: 1px;
+	line-height: 0px;
+	left: auto;
+	width: 800px;
+	top: auto;
+}
+#sidebar1 { padding-top: 0px; }
+#mainContent { zoom: 1; padding-top: 15px; }
